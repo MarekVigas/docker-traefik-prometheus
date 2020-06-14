@@ -51,4 +51,4 @@ scrape_configs:
   - job_name: 'o2'
     scrape_interval: 5s
     static_configs:
-    - targets: ['mobilesignage.o2.cz:8069']
+    - targets: ['https://mobilesignage.o2.cz:8069']

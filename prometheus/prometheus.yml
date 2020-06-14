@@ -49,9 +49,6 @@ scrape_configs:
       port: 8080
 
   - job_name: 'o2'
-
-    # Override the global default and scrape targets from this job every 5 seconds.
     scrape_interval: 5s
-
     static_configs:
-         - targets: ['https://mobilesignage.o2.cz:8069']
+    - targets: ['mobilesignage.o2.cz:8069']

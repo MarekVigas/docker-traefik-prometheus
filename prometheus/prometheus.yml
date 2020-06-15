@@ -54,3 +54,10 @@ scrape_configs:
     scheme: https
     static_configs:
     - targets: ['mobilesignage.o2.cz:8069']
+
+  - job_name: 'o2-nginx'
+    scrape_interval: 5s
+    metrics_path: /nginx-metrics
+    scheme: https
+    static_configs:
+    - targets: ['mobilesignage.o2.cz:8069']
